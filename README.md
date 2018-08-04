@@ -4,7 +4,7 @@ welcome to smartcity project
 username = smartcity
 password = iot
 ------------------------------------------------------------
-how to execute??????
+how to execute?
 
 1. First execute smartycity.py program in idle or cmd
 2. Now enter username and password as mention above.
