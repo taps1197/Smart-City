@@ -1,8 +1,9 @@
 ------------------------------------------------------------------
 welcome to smartcity project
 -----------------------------------------
-username = smartcity
-password = iot
+### username = smartcity
+
+### password = iot
 ------------------------------------------------------------
 how to execute?
 
