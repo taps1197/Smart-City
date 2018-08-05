@@ -13,10 +13,10 @@ rp.setup(15,rp.OUT)
 rp.setup(19,rp.OUT)
 rp.setup(23,rp.OUT)
 rp.setup(21,rp.IN)
-name=[]
+name=[]                     #list
 nc=5
 s=serial.Serial('/dev/ttyUSB0')
-d=s.read(12)
+d=s.read(12)                #card scan
 print (d)
 n=0
 print('CARD ACCEPTED')
@@ -31,8 +31,8 @@ player.set_media(media)
 player.play()
 
 t.sleep(5)
-wb=xw.Workbook()
-shw=wb.add_sheet('sheet1')
+wb=xw.Workbook()        #for MS excel
+shw=wb.add_sheet('sheet1')          #data type:-not  a list but a represntation of excel
 for i in range(0,len(name)):
     shw.write(0,i,name[i])
 wb.save('Parking.xls')
