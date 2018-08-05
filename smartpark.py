@@ -22,13 +22,13 @@ n=0
 print('CARD ACCEPTED')
 na=input('NAME:')
 name.append(na)
-# instance=vlc.Instance()
-# player=instance.media_player_new()
-# ch='welcome.mp3'
-# media=instance.media_new(ch)
-# media.get_mrl()
-# player.set_media(media)
-# player.play()
+instance=vlc.Instance()
+player=instance.media_player_new()
+ch='welcome.mp3'
+media=instance.media_new(ch)
+media.get_mrl()
+player.set_media(media)
+player.play()
 
 t.sleep(5)
 wb=xw.Workbook()        #for MS excel
@@ -64,7 +64,7 @@ while(n<5):
         pass
     sot=t.time()
     tt=sot-st
-    d=(34300*tt)/2          #distance calcluation uisng ultrasonic sensor
+    d=(34300*tt)/2
     if(d<100):
         print('car is at distance',d,'cm')
     n=n+1
